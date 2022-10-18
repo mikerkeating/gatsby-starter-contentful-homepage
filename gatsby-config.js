@@ -21,6 +21,13 @@ module.exports = {
         host: process.env.CONTENTFUL_HOST,
       },
     },
+    {
+      resolve: "gatsby-theme-contentful-blog",
+      options: {
+        postPath: "src/templates/blog-post",
+        indexPath: "src/templates/blog-index",
+      },
+    },    
     "gatsby-plugin-sharp",
     "gatsby-plugin-image",
     "gatsby-transformer-sharp",
