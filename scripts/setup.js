@@ -110,9 +110,9 @@ inquirer
       return { spaceId, managementToken }
     }
   )
-  .then(({ spaceId, managementToken }) =>
-    spaceImport({ spaceId, managementToken, content: data })
-  )
+  //.then(({ spaceId, managementToken }) =>
+  //  spaceImport({ spaceId, managementToken, content: data })
+  //)
   .then((_, error) => {
     console.log(
       `All set! You can now run ${chalk.yellow(
